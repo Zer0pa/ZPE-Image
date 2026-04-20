@@ -1,0 +1,110 @@
+{
+  "artifact_version": "geogram6-l2-bridge-candidate-v1",
+  "generated_at_utc": "2026-04-20T16:57:43Z",
+  "lane": "L2 image",
+  "wave": "geogram6-bridge-candidate",
+  "output": "no_witness_under_current_frozen_scope",
+  "candidate_witness": null,
+  "frozen_l2_surfaces": {
+    "sparse_stroke_sovereign_route": {
+      "accepted_positive_cases": [
+        "glyph_a",
+        "fork_tree",
+        "loop_spine",
+        "maze_turns",
+        "serpentine"
+      ],
+      "positive_accept_rate": 1.0,
+      "negative_reject_rate": 1.0,
+      "helper_gap": 0.0,
+      "role": "lane_local_bounded_authority"
+    },
+    "hole_bearing_secondary_codec": {
+      "accepted_positive_cases": [
+        "glyph_a",
+        "loop_spine",
+        "maze_turns"
+      ],
+      "out_of_scope_positive_cases": [
+        "fork_tree",
+        "serpentine"
+      ],
+      "reject_bucket_reject_rate": 1.0,
+      "release_surface_status": "not_promoted_to_default_route",
+      "role": "lane_local_bounded_secondary_codec"
+    },
+    "reject_frontier_discipline": {
+      "mixed": "hard_reject",
+      "negative_natural": "hard_reject",
+      "role": "anti_coercion_control_surface"
+    }
+  },
+  "current_certified_subset": {
+    "certified_surface_edges": [
+      "E1",
+      "E1+E5",
+      "E5"
+    ],
+    "active_admitted_node_refinements": [
+      "BW_L6F_CERTIFIED_L6_RETRACTION_V1",
+      "BW_L3E_CERTIFIED_L3_RETRACTION_V1"
+    ],
+    "out_of_graph_bounded_results": [
+      "L4_bounded_smell"
+    ],
+    "refused_targets": [
+      "L2_to_certified_subset"
+    ]
+  },
+  "evaluated_bridge_surfaces": [
+    {
+      "surface": "sparse_stroke_sovereign_route",
+      "bridge_status": "no_bridge",
+      "reason": "Preserves lane-local bounded truth only. No frozen certified edge or relation witness links this surface into the certified E1/E5 graph."
+    },
+    {
+      "surface": "hole_bearing_secondary_codec",
+      "bridge_status": "no_bridge",
+      "reason": "Bundle-local exactness on a narrower scope does not create a frozen admission witness and is explicitly non-promoted."
+    },
+    {
+      "surface": "E4_frontier_sharing_control",
+      "bridge_status": "not_admission_witness",
+      "reason": "E4 preserves reject-frontier honesty across L2-L4-L8, but L4 is out of graph and L8 remains negative, so E4 cannot admit L2 into the current certified subset."
+    }
+  ],
+  "exact_missing_bridge": {
+    "required_witness_types": [
+      "certified_node_retraction_bridge anchored on an already-certified L2 node",
+      "frozen cross-lane compatibility witness with a nontrivial relation functional into the certified E1/E1+E5/E5 surface"
+    ],
+    "status": "absent_on_disk",
+    "why_missing": "Neither frozen L2 surface carries a certified-node anchor, and no frozen relation witness links the sparse route or the hole-bearing secondary codec to the current certified subset."
+  },
+  "why_forced_bridge_would_fail": {
+    "packet_of_packets_falsifier": "A forced bridge would merely compose L2 preservation and bundle-local exactness with other lanes' admitted node refinements, without any new cross-lane witness.",
+    "disallowed_shortcuts": [
+      "treating preservation as admission",
+      "treating scope_accept_rate as coverage",
+      "treating E4 anti-coercion as subset admission"
+    ]
+  },
+  "bounded_non_claims": [
+    "No codec scope widening.",
+    "No natural-image reopening.",
+    "No reject-bucket softening.",
+    "No promotion of the hole-bearing secondary codec to default.",
+    "No claim that preservation or scope_accept_rate implies bridge admission."
+  ],
+  "evidence_inputs": [
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-image-codec/geogram5/report/L2_FINAL_REPORT.md",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-image-codec/geogram5/artifacts/l2_image_geogram5.json",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-protocol/instruments/fabag-v1/L13_INSTRUMENT_V1.md",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-protocol/instruments/fabag-v1/runs/geogram6-post-freeze/L13_FINAL_REPORT.md",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-protocol/instruments/fabag-v1/runs/geogram6-post-freeze/artifacts/l13_meta_geogram6_post_freeze.json",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-research/l1-diagram/geogram5/artifacts/l1_diagram_geogram5.json",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-music-codec/geogram6/l3-expression-followup/artifacts/l3_music_geogram6.json",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-touch-codec/geogram5/artifacts/l6_touch_geogram5.json",
+    "/Users/Zer0pa/ZPE_CANONICAL/zpe-research/l4-smell/geogram6/artifacts/l4_smell_geogram6.json"
+  ]
+}
