@@ -13,10 +13,14 @@ from typing import Callable, Iterable, Sequence
 
 SCRIPT_PATH = Path(__file__).resolve()
 CODE_ROOT = SCRIPT_PATH.parents[1]
-V0_ROOT = CODE_ROOT.parent
-REPO_ROOT = V0_ROOT.parent
+if (CODE_ROOT / "pyproject.toml").exists():
+    REPO_ROOT = CODE_ROOT
+    ARTIFACT_ROOT = REPO_ROOT / "artifacts"
+else:
+    V0_ROOT = CODE_ROOT.parent
+    REPO_ROOT = V0_ROOT.parent
+    ARTIFACT_ROOT = V0_ROOT / "proofs" / "artifacts"
 FIXTURES = CODE_ROOT / "fixtures"
-ARTIFACT_ROOT = V0_ROOT / "proofs" / "artifacts"
 
 if str(CODE_ROOT) not in sys.path:
     sys.path.insert(0, str(CODE_ROOT))
@@ -125,7 +129,11 @@ def stable_json_bytes(payload: object) -> bytes:
 
 def repo_text_cases() -> list[TextCase]:
     readme_excerpt = (REPO_ROOT / "README.md").read_text(encoding="utf-8")[:1800]
-    core_excerpt = (CODE_ROOT / "zpe_multimodal" / "core" / "imc.py").read_text(encoding="utf-8")[:1800]
+    if (CODE_ROOT / "zpe_multimodal" / "core" / "imc.py").exists():
+        core_path = CODE_ROOT / "zpe_multimodal" / "core" / "imc.py"
+    else:
+        core_path = CODE_ROOT.parent / "zpe-core" / "zpe_multimodal" / "core" / "imc.py"
+    core_excerpt = core_path.read_text(encoding="utf-8")[:1800]
     multilingual = (
         "ZPE IMC multilingual probe: Bonjour le monde. "
         "مرحبا بالعالم. नमस्ते दुनिया. 日本語の確認です. "

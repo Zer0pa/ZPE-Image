@@ -2,14 +2,25 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+import sys
 from typing import Iterable, Sequence, Tuple
 
 import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
 FIXTURES = ROOT / "fixtures"
 NOTES = ROOT / "notes"
+
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+from zpe_image_codec.bootstrap import ensure_core_imports
+
+ensure_core_imports()
 
 
 def configure_env() -> None:

@@ -15,10 +15,17 @@ except Exception:  # pragma: no cover - dependency guard
 
 SCRIPT_PATH = Path(__file__).resolve()
 CODE_ROOT = SCRIPT_PATH.parents[1]
+SRC_ROOT = CODE_ROOT / "src"
 if str(SCRIPT_PATH.parent) not in sys.path:
     sys.path.insert(0, str(SCRIPT_PATH.parent))
 if str(CODE_ROOT) not in sys.path:
     sys.path.insert(0, str(CODE_ROOT))
+if str(SRC_ROOT) not in sys.path:
+    sys.path.insert(0, str(SRC_ROOT))
+
+from zpe_image_codec.bootstrap import ensure_core_imports
+
+ensure_core_imports()
 
 from benchmark_support import git_commit, median_latency_ms, utc_now, write_json_artifact
 from zpe_multimodal.geogram.router import RouterConfig, route_raster_image, subset_boundary
