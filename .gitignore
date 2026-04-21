@@ -7,4 +7,5 @@ dist/
 .venv/
 validation/results/*.local.json
 validation/results/*.final.json
+proofs/artifacts/*.local.json
 proofs/artifacts/*.final.json
