@@ -39,12 +39,12 @@ ZPE-Image is a standalone bounded image encoder for sparse-stroke figures, with 
 - We do not claim any broader cross-product admission beyond this repo's two bounded scopes.
 
 ## Commercial Readiness
-Fresh falsification works from a clean install. This repo now ships with `Zer0pa Source-Available License v7.0` at the root surface.
+Fresh falsification works from a clean install. This repo now ships with `Zer0pa Source-Available License v7.0` at the root surface. This release candidate is restamped to the verified source commit below.
 
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
-| Commit SHA | UNSTAMPED |
+| Commit SHA | c1ed7abaa560 |
 | Confidence | 100% |
 | Source | validation/results/fresh_falsification_check.json |
 

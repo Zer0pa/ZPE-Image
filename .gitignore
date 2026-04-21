@@ -6,3 +6,5 @@ dist/
 *.egg-info/
 .venv/
 validation/results/*.local.json
+validation/results/*.final.json
+proofs/artifacts/*.final.json

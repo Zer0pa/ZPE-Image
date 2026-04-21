@@ -547,14 +547,14 @@
       "status": "PASS"
     },
     {
-      "check": "No copied public license surface is bundled in this snapshot; rights remain reserved by default.",
+      "check": "Root repo surface ships with Zer0pa Source-Available License v7.0.",
       "id": "V_06",
       "status": "PASS"
     }
   ],
   "confidence_pct": 100,
-  "generated_at_utc": "2026-04-21T08:41:01Z",
-  "git_commit": "unknown",
+  "generated_at_utc": "2026-04-21T14:27:35Z",
+  "git_commit": "c1ed7abaa560",
   "non_claims": [
     "No broad natural-image coverage claim.",
     "No claim that the narrower hole-bearing route is the default route.",

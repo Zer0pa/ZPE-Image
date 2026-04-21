@@ -261,7 +261,7 @@ def main() -> int:
     parser.add_argument("--proof-output", type=Path)
     args = parser.parse_args()
 
-    payload = run_verification()
+    payload = run_verification(repo_root=Path.cwd())
     rendered = json.dumps(payload, indent=2, sort_keys=True) + "\n"
 
     if args.output is not None:
