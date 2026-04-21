@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: ZPE-Image
+message: If you use this repository, cite the fresh falsification packet and the package record.
+type: software
+authors:
+  - family-names: Zer0paGlyph
+repository-code: https://github.com/Zer0pa/ZPE-Image
+version: 0.1.0

@@ -4,4 +4,5 @@ __pycache__/
 build/
 dist/
 *.egg-info/
-artifacts/
+.venv/
+validation/results/*.local.json

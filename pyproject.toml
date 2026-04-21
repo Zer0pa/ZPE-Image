@@ -1,19 +1,21 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "zpe-image-codec"
+name = "zpe-image"
 version = "0.1.0"
-description = "Bounded sparse-stroke image codec split from the IMC monorepo"
+description = "Standalone bounded image encoding package for sparse-stroke figures and a narrower hole-bearing route"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{name = "Zer0paGlyph"}]
-license = {text = "LicenseRef-Zer0pa-SAL-6.2"}
 dependencies = ["numpy", "scipy"]
 
 [project.optional-dependencies]
 dev = ["pytest"]
+
+[project.scripts]
+zpe-image-verify = "zpe_image_codec.verify:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
