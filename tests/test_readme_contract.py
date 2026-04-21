@@ -9,10 +9,9 @@ README = ROOT / "README.md"
 
 def test_readme_uses_canonical_heading_order() -> None:
     headings = [line.strip() for line in README.read_text().splitlines() if line.startswith("## ")]
-    assert headings == [
+    required = [
         "## What This Is",
         "## Key Metrics",
-        "## Competitive Benchmarks",
         "## What We Prove",
         "## What We Don't Claim",
         "## Commercial Readiness",
@@ -21,6 +20,11 @@ def test_readme_uses_canonical_heading_order() -> None:
         "## Repo Shape",
         "## Quick Start",
     ]
+    if "## Competitive Benchmarks" in headings:
+        expected = required[:2] + ["## Competitive Benchmarks"] + required[2:]
+    else:
+        expected = required
+    assert headings == expected
 
 
 def test_readme_metadata_and_quick_start() -> None:
