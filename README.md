@@ -1,5 +1,7 @@
 # ZPE-Image
 
+[![License: SAL v7.0](https://img.shields.io/badge/license-SAL%20v7.0-blue.svg)](LICENSE)
+
 ## What This Is
 ZPE-Image is a standalone bounded image encoder for sparse-stroke figures, with a second narrower route for hole-bearing sparse forms. It is useful now for clean line-structured black-on-light graphics, and it keeps mixed and natural-image content outside scope. The package installs and runs on its own from a fresh clone.
 
