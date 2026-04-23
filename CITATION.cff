@@ -6,3 +6,6 @@ authors:
   - family-names: Zer0paGlyph
 repository-code: https://github.com/Zer0pa/ZPE-Image
 version: 0.1.0
+license: LicenseRef-Zer0pa-SAL-7.0
+contact:
+  - email: architects@zer0pa.ai
