@@ -1,0 +1,25 @@
+{
+  "title": "ZPE-Image",
+  "description": "ZPE-Image is a standalone bounded image encoder for sparse-stroke figures, with a second narrower route for hole-bearing sparse forms. It is useful now for clean line-structured black-on-light graphics, and it keeps mixed and natural-image content outside scope.",
+  "creators": [
+    {
+      "name": "Zer0pa (Pty) Ltd"
+    }
+  ],
+  "keywords": [
+    "image encoding",
+    "sparse stroke",
+    "line art",
+    "geometry codec",
+    "topological bundle"
+  ],
+  "license": "LicenseRef-Zer0pa-SAL-7.0",
+  "upload_type": "software",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Zer0pa/ZPE-Image",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

@@ -1,9 +1,26 @@
-# Security
+# Security Policy
 
-Report security issues or material verification flaws privately to the repository owner before public disclosure.
+## Supported Scope
 
-Include:
-- the affected file or interface
-- exact reproduction steps
-- observed behavior
-- expected behavior
+This repository accepts security reports for:
+
+1. Python package runtime and CLI (`src/zpe_image_codec`, `zpe-image-verify`).
+2. Verification and proof-routing surfaces (`proofs/`, `validation/`, `REPRODUCIBILITY.md`).
+3. CI and release pipeline configurations.
+
+## Reporting
+
+Please report vulnerabilities privately to `architects@zer0pa.ai` with:
+
+1. A clear impact summary.
+2. Reproduction steps or proof-of-concept.
+3. Affected versions or commit ranges.
+4. Suggested remediation when available.
+
+## Response Targets
+
+1. Initial acknowledgement: within 5 business days.
+2. Triage and severity classification: within 10 business days.
+3. Remediation timeline: shared after triage.
+
+Public disclosure should be coordinated after a fix is available.
