@@ -3,9 +3,17 @@ title: ZPE-Image
 message: If you use this repository, cite the fresh falsification packet and the package record.
 type: software
 authors:
-  - family-names: Zer0paGlyph
+  - name: Zer0pa (Pty) Ltd
+    email: architects@zer0pa.ai
 repository-code: https://github.com/Zer0pa/ZPE-Image
+url: https://github.com/Zer0pa/ZPE-Image
 version: 0.1.0
 license: LicenseRef-Zer0pa-SAL-7.0
+keywords:
+  - image encoding
+  - sparse-stroke figures
+  - geometry codec
+  - bounded verification
+  - hole-bearing forms
 contact:
   - email: architects@zer0pa.ai

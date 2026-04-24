@@ -46,7 +46,7 @@ Fresh falsification works from a clean install. This repo now ships with `Zer0pa
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
-| Commit SHA | c1ed7abaa560 |
+| Commit SHA | 927b2382e0a8 |
 | Confidence | 100% |
 | Source | validation/results/fresh_falsification_check.json |
 
