@@ -50,4 +50,4 @@ def test_readme_proof_anchors_match_validation_packet() -> None:
     assert f"| Posture | `{payload['publication_status']}` |" in text
     assert f"| Verification Status | `{payload['verification_status']}` |" in text
     assert f"| Commit SHA | {payload['git_commit']} |" in text
-    assert "| Source | validation/results/fresh_falsification_check.json |" in text
+    assert "| Source | `validation/results/fresh_falsification_check.json` |" in text
