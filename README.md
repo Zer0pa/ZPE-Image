@@ -47,6 +47,8 @@ Two routes ship: a primary sparse-stroke route and a narrower hole-bearing bundl
 | Field | Value |
 |-------|-------|
 | Verdict | STAGED |
+| Posture | `ready_for_publication_review` |
+| Verification Status | `fresh_falsification_ready` |
 | Commit SHA | c1ed7abaa560 |
 | Source | `validation/results/fresh_falsification_check.json` |
 
