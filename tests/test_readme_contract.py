@@ -46,7 +46,8 @@ def test_readme_proof_anchors_match_validation_packet() -> None:
         relative_path = anchor.relative_to(ROOT).as_posix()
         assert f"`{relative_path}`" in text
 
-    assert f"| Verdict | {payload['publication_status']} |" in text
-    assert f"| Verification Status | {payload['verification_status']} |" in text
+    assert "| Verdict | STAGED |" in text
+    assert f"| Posture | `{payload['publication_status']}` |" in text
+    assert f"| Verification Status | `{payload['verification_status']}` |" in text
     assert f"| Commit SHA | {payload['git_commit']} |" in text
     assert "| Source | validation/results/fresh_falsification_check.json |" in text
