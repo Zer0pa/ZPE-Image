@@ -8,8 +8,29 @@ version = "0.1.0"
 description = "Standalone bounded image encoding package for sparse-stroke figures and a narrower hole-bearing route"
 readme = "README.md"
 requires-python = ">=3.10"
-authors = [{name = "Zer0paGlyph"}]
+license = {text = "LicenseRef-Zer0pa-SAL-7.0"}
+authors = [{name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"}]
+keywords = [
+    "image encoding",
+    "sparse-stroke figures",
+    "geometry codec",
+    "bounded verification",
+    "hole-bearing forms",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Topic :: Scientific/Engineering",
+]
 dependencies = ["numpy", "scipy"]
+
+[project.urls]
+Homepage = "https://github.com/Zer0pa/ZPE-Image"
+Documentation = "https://github.com/Zer0pa/ZPE-Image/blob/main/docs/README.md"
+Repository = "https://github.com/Zer0pa/ZPE-Image"
+Issues = "https://github.com/Zer0pa/ZPE-Image/issues"
+Changelog = "https://github.com/Zer0pa/ZPE-Image/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = ["pytest"]
