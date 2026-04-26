@@ -91,3 +91,9 @@ python3 -m pip install '.[dev]'
 zpe-image-verify --output validation/results/fresh_falsification_check.local.json
 pytest -q
 ```
+
+## Upcoming Workstreams
+
+This section captures the active lane priorities — what the next agent or contributor picks up, and what investors should expect. Cadence is continuous, not milestoned.
+
+- **External comparator integration** — Active Engineering. Add gzipped-SVG and PNG-of-render-at-fixed-quality comparators to the proof artifact; report both, let reviewer pick. Removes the no-market-reference-frame gap on the current 5.75× CR claim (currently measured only against an internal quadtree fallback).
