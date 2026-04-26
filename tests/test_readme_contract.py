@@ -23,6 +23,7 @@ def test_readme_uses_canonical_heading_order() -> None:
         "## Proof Anchors",
         "## Repo Shape",
         "## Quick Start",
+        "## Upcoming Workstreams",
     ]
 
 
