@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Standalone bounded image encoding package for sparse-stroke figures and a narrower hole-bearing route"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "LicenseRef-Zer0pa-SAL-7.0"
+license = "LicenseRef-Zer0pa-SAL-7.1"
 authors = [{name = "Zer0pa (Pty) Ltd", email = "architects@zer0pa.ai"}]
 keywords = [
     "image encoding",
