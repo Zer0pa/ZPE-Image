@@ -82,7 +82,7 @@ We do not claim photo, texture, gradient, or broad natural-image coverage.; We d
 | V_03 | Sparse perturbation floors stay above documented thresholds (IoU ≥0.62, skeleton F1 ≥0.74). | PASS |
 | V_04 | Secondary hole-bearing route accepts exactly 3/5 positives; rejects out-of-scope positives. | PASS |
 | V_05 | Installed package imports and runs without sibling runtime dependencies. | PASS |
-| V_06 | Root repo surface ships with Zer0pa Source-Available License v7.0. | PASS |
+| V_06 | Root repo surface ships with Zer0pa Source-Available License v7.1. | PASS |
 
 ## Proof Anchors
 
