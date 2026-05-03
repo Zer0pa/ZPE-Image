@@ -8,7 +8,7 @@ authors:
 repository-code: https://github.com/Zer0pa/ZPE-Image
 url: https://github.com/Zer0pa/ZPE-Image
 version: 0.1.0
-license: LicenseRef-Zer0pa-SAL-7.0
+license: LicenseRef-Zer0pa-SAL-7.1
 keywords:
   - image encoding
   - sparse-stroke figures
