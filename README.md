@@ -65,7 +65,7 @@ pytest -q
 <table width="100%">
 <tr>
 <td width="50%" valign="top">
-<div><b>03 · VALUE</b></div>
+<div><b>03 · VALUE OF MARKET</b></div>
       <div>$1.9<span>B</span></div>
       <div>2030 diagramming software; ZPE-Image is the sparse-stroke archive slice inside that category.</div>
 </td>
