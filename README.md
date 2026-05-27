@@ -35,6 +35,24 @@ Install success only proves package acquisition/import. Product scope, stale PyP
 - PyPI copy is stale or pending refresh; install success is not product readiness.
 <!-- INSTALL-DX:END -->
 
+#### Evidence Anchors
+
+| Evidence | Current truth |
+|---|---|
+| Architecture | IMAGE_STREAM |
+| Encoding | IMAGE_SPARSE_GEOMETRY_V1 |
+| Proof Anchors | 3 |
+| Authority Source | `proofs/artifacts/fresh_falsification_packet.json` |
+| Runtime Package | `src/zpe_image_codec` |
+| Verification packet | `proofs/manifests/CURRENT_VERIFICATION_PACKET.md` |
+| Proof packet | `proofs/artifacts/fresh_falsification_packet.json` |
+| Validation result | `validation/results/fresh_falsification_check.json` |
+| Verdict | STAGED |
+| Posture | `ready_for_publication_review` |
+| Verification Status | `fresh_falsification_ready` |
+| Commit SHA | c1ed7abaa560 |
+| Source | `validation/results/fresh_falsification_check.json` |
+
 #### Quick Start
 
 ```bash

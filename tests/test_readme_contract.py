@@ -13,18 +13,35 @@ PROOF_MANIFEST = ROOT / "proofs" / "manifests" / "CURRENT_VERIFICATION_PACKET.md
 
 def test_readme_uses_canonical_heading_order() -> None:
     headings = [line.strip() for line in README.read_text().splitlines() if line.startswith("## ")]
-    assert headings == [
-        "## What This Is",
-        "## Key Metrics",
-        "## What We Prove",
-        "## What We Don't Claim",
-        "## Commercial Readiness",
-        "## Tests and Verification",
-        "## Proof Anchors",
-        "## Repo Shape",
-        "## Quick Start",
-        "## Upcoming Workstreams",
-    ]
+    assert headings == ["## Install / Developer Commands"]
+
+    text = README.read_text()
+    for section in (
+        "00 · ZPE-IMAGE",
+        "01 · THE GAP",
+        "02 · MARKETS",
+        "03 · VALUE OF MARKET",
+        "04 · INSIGHT",
+        "05.1 · CURRENT TECH",
+        "05.2 · OUR TECH",
+        "05.3 · BENCHMARKS",
+        "06 · MEASUREMENT",
+        "06.1 · COMPARATIVE PERFORMANCE",
+        "07 · KEY METRICS",
+        "08 · SCOPE ENFORCEMENT",
+        "08.1 · WHAT THE BOUNDARY MEANS",
+        "08.2 · HONEST BLOCKER",
+        "09",
+        "09.1 · THE AMBITION",
+        "09.2 · WHAT WORKS NOW",
+        "09.3 · WHAT'S STILL OPEN",
+        "09.4",
+        "09.5",
+        "09.6",
+        "09.7",
+        "09.8",
+    ):
+        assert section in text
 
 
 def test_readme_metadata_and_quick_start() -> None:
