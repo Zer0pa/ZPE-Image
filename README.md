@@ -2,6 +2,57 @@
 
 ## Install / Developer Commands
 
+<!-- INSTALL-DX:START -->
+#### Package Install
+
+Installable package: `python3.11 -m pip install zpe-image`.
+Current release: `0.1.0` on [PyPI](https://pypi.org/project/zpe-image/).
+Source: [Zer0pa/ZPE-Image](https://github.com/Zer0pa/ZPE-Image/).
+
+```bash
+python3.11 -m pip install zpe-image
+```
+
+Import smoke:
+
+```bash
+python3.11 - <<'PY'
+import importlib.metadata as md
+import zpe_image_codec
+
+print("zpe-image", md.version("zpe-image"))
+PY
+```
+
+
+CLI smoke:
+
+```bash
+zpe-image-verify --help
+```
+
+Install success only proves package acquisition/import. Product scope, stale PyPI state, platform limits, and blockers remain in the front-door sections below.
+- PyPI copy is stale or pending refresh; install success is not product readiness.
+<!-- INSTALL-DX:END -->
+
+#### Evidence Anchors
+
+| Evidence | Current truth |
+|---|---|
+| Architecture | IMAGE_STREAM |
+| Encoding | IMAGE_SPARSE_GEOMETRY_V1 |
+| Proof Anchors | 3 |
+| Authority Source | `proofs/artifacts/fresh_falsification_packet.json` |
+| Runtime Package | `src/zpe_image_codec` |
+| Verification packet | `proofs/manifests/CURRENT_VERIFICATION_PACKET.md` |
+| Proof packet | `proofs/artifacts/fresh_falsification_packet.json` |
+| Validation result | `validation/results/fresh_falsification_check.json` |
+| Verdict | STAGED |
+| Posture | `ready_for_publication_review` |
+| Verification Status | `fresh_falsification_ready` |
+| Commit SHA | c1ed7abaa560 |
+| Source | `validation/results/fresh_falsification_check.json` |
+
 #### Quick Start
 
 ```bash
