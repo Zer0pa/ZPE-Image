@@ -19,6 +19,7 @@ For full install, smoke, source, and developer commands, [click here](#install-d
 <td width="100%" valign="top">
 <div><span><b>00 · ZPE-IMAGE</b> · STRUCTURAL CODEC</span> <span>RESEARCH-READY · EXTERNAL COMPARATORS OPEN</span></div>
       <h1>Store the shape, <span>not the screenshot.</span></h1>
+      <p><strong>Live experiment. Not a release. Ambition headlined. Claims bounded.</strong></p>
       <p>Sparse-stroke encoder · ZPE-Image · <em>zpe-image</em> 0.1.0 stale · github.com/Zer0pa/ZPE-Image</p>
       <p>Most image codecs sell one number: bytes saved on photographs. ZPE-Image sells two. On five sparse structural figures — glyphs, mazes, flow-graphs, skeletons — it delivers <strong>5.75× byte reduction</strong> against the internal baseline. On seven natural and mixed inputs, it returns a <strong>refusal</strong> at encode time. The codec is built to answer two questions in one packet: what it stores, and what it will never accept. Photographs are not in scope, and that is the point.</p>
 </td>
